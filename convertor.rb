@@ -10,4 +10,9 @@ module Convertor
     fullHeight = intPart + fltPart
     fullHeight
   end
+
+  def toKilos(width)
+    inKilos = width * 0.454
+    inKilos
+  end
 end
