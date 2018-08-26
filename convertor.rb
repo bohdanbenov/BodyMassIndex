@@ -7,12 +7,10 @@ module Convertor
     intPart *= 30.48
     fltPart *= 2.54
 
-    fullHeight = intPart + fltPart
-    fullHeight
+    fullHeight = (intPart + fltPart)/100
   end
 
-  def toKilos(width)
-    inKilos = width * 0.454
-    inKilos
+  def toKilos(weight)
+    inKilos = weight * 0.454
   end
 end
